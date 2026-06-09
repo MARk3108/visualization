@@ -5,6 +5,7 @@ networks:
 services:
 
   superset:
+    mem_limit: 2g
     image: apache/superset:3.1.0
     container_name: superset
     restart: unless-stopped
